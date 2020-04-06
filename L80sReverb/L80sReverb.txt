@@ -1,0 +1,15 @@
+iolayout 2 2;
+code L80R;
+type effect;
+description Reverb that sounds like a cheap, circuit bent reverb unit from the late 80s. Made by Jonathan Higgins.;
+image L80sReverb.png;
+taillength 30;
+param -name Density -min 100 -max 700 -default 180;
+param -name Decay -min 0 -max 1 -default 0.5;
+param -name Low Pass -label Hz -min 15 -max 20000 -default 20000;
+param -name Dry/Wet -min -1 -max 1 -default 1;
+param -name Block Size -min 3 -max 31 -default 31;
+param -name Block Overlap -min 0 -max 4 -nsteps 5 -default 0;
+param -name Downsample -min 0 -max 4 -nsteps 5 -default 0;
+compatibility 1.0.5;
+
