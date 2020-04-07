@@ -7,4 +7,8 @@ Sample and hold being abused with a feedback loop so that it works like a weird 
 <br><br>
 ![L80sReverb screenshot](https://raw.githubusercontent.com/j-p-higgins/jh.tools/master/l80s_screenshot.png)<br>
 **L80sReverb**<br>
-Relatively rubbish reverb that sounds a bit like a cheap, reverb unit from the late 80s. Where this plugin is interesting is that you can modify the block size, overlap and sample rate of the reverb processing which gives effects similar to circuit bent reverb units. 
+Relatively rubbish reverb that sounds a bit like a cheap, reverb unit from the late 80s. Where this plugin is interesting is that you can modify the block size, overlap and sample rate of the reverb processing which gives effects similar to circuit bent reverb units.
+<br><br>
+![Gloop screenshot](https://raw.githubusercontent.com/j-p-higgins/jh.tools/master/gloop_screenshot.png)<br>
+**Gloop**<br>
+Dual mono looper/freeze effect with tremolo. No zero crossing point detection so often clicks and pops. Switch on random for instant Alva Noto. 
