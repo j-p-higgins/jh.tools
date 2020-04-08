@@ -1,19 +1,19 @@
 #N canvas 508 42 1690 918 10;
 #X obj 547 733 samphold~;
 #X obj 599 707 phasor~ 1000;
-#X obj 162 212 hsl 128 15 500 50000 1 0 \$0-cutoffslider-s \$0-cutoffslider-r
-empty -2 -8 0 10 -99865 -228856 -1 9848 1;
+#X obj 173 224 hsl 128 15 500 50000 1 0 \$0-cutoffslider-s \$0-cutoffslider-r
+empty -2 -8 0 10 -95835 -228593 -1 0 1;
 #X obj 568 827 *~;
 #X obj 583 808 vline~;
 #X msg 583 787 \$1 20;
-#X obj 404 173 hsl 128 15 0 1 0 0 \$0-resonanceslider-s \$0-resonanceslider-r
-empty -2 -8 0 10 -99865 -228856 -228856 0 1;
+#X obj 173 262 hsl 128 15 0 1 0 0 \$0-resonanceslider-s \$0-resonanceslider-r
+empty -2 -8 0 10 -95835 -228593 -228856 0 1;
 #X obj 614 659 - 500;
 #X obj 546 1109 *~;
 #X obj 561 1090 vline~;
 #X msg 561 1069 \$1 20;
-#X obj 404 212 hsl 128 15 0 1 0 0 \$0-outputgainslider-s \$0-outputgainslider-r
-empty -2 -8 0 10 -99865 -228856 -1 0 1;
+#X obj 173 300 hsl 128 15 0 1 0 0 \$0-outputgainslider-s \$0-outputgainslider-r
+empty -2 -8 0 10 -95835 -228593 -1 0 1;
 #X obj 614 637 r \$0-cutoff;
 #X obj 591 591 r~ \$0-feedbackL;
 #X obj 568 848 send~ \$0-feedbackL;
@@ -41,8 +41,8 @@ empty -2 -8 0 10 -99865 -228856 -1 0 1;
 #X obj 547 1021 lop~;
 #X obj 568 994 spigot;
 #X obj 601 947 r \$0-antialiasing;
-#X obj 160 173 tgl 15 0 \$0-antialiasingtoggle-s \$0-antialiasingtoggle-r
-empty 17 7 0 10 -99865 -228856 -228856 0 1;
+#X obj 170 186 tgl 15 0 \$0-antialiasingtoggle-s \$0-antialiasingtoggle-r
+empty 17 7 0 10 -95835 -228593 -228856 0 1;
 #X obj 614 971 sel 1;
 #X msg 641 994 30000;
 #X obj 614 994 f;
@@ -71,16 +71,16 @@ empty 17 7 0 10 -99865 -228856 -228856 0 1;
 #X obj 820 1328 dac~ 2;
 #X msg 102 526 0;
 #X obj 102 549 s \$0-antialiasing;
-#X obj 297 212 nbx 5 15 -1e+037 1e+037 0 0 empty \$0-cutofffreq empty
-0 -8 0 10 -99865 -228856 -228856 8636.48 256;
-#X obj 539 173 nbx 5 15 -1e+037 1e+037 0 0 empty \$0-resonance empty
-0 -8 0 10 -99865 -228856 -228856 0 256;
-#X obj 538 212 nbx 5 15 -1e+037 1e+037 0 0 empty \$0-outputgain empty
-0 -8 0 10 -99865 -228856 -228856 0 256;
-#X obj 647 212 hsl 128 15 -1 1 0 0 \$0-wetdryslider-s \$0-wetdryslider-r
-empty -2 -8 0 10 -99865 -228856 -1 0 1;
-#X obj 781 212 nbx 5 15 -1e+037 1e+037 0 0 empty \$0-wetdry empty 0
--8 0 10 -99865 -228856 -228856 0 256;
+#X obj 308 224 nbx 5 15 -1e+037 1e+037 0 0 empty \$0-cutofffreq empty
+0 -8 0 10 -95835 -228593 -228856 0 256;
+#X obj 308 262 nbx 5 15 -1e+037 1e+037 0 0 empty \$0-resonance empty
+0 -8 0 10 -95835 -228593 -228856 0 256;
+#X obj 308 300 nbx 5 15 -1e+037 1e+037 0 0 empty \$0-outputgain empty
+0 -8 0 10 -95835 -228593 -228856 0 256;
+#X obj 639 300 hsl 128 15 -1 1 0 0 \$0-wetdryslider-s \$0-wetdryslider-r
+empty -2 -8 0 10 -112933 -62482 -1 0 1;
+#X obj 774 300 nbx 5 15 -1e+037 1e+037 0 0 empty \$0-wetdry empty 0
+-8 0 10 -112933 -62482 -228856 0 256;
 #X obj 835 1131 r \$0-wetdry;
 #X obj 835 1154 + 1;
 #X obj 835 1177 / 2;
@@ -225,10 +225,10 @@ empty -2 -8 0 10 -99865 -228856 -1 0 1;
 #X obj 568 875 r \$0-half-lfo;
 #X obj 331 709 *;
 #X obj 346 668 r \$0-lfoamount;
-#X obj 649 126 hsl 128 15 0.04 4 1 0 \$0-lfoamount-s \$0-lfoamount-r
-empty -2 -8 0 10 -99865 -228856 -1 3400 1;
-#X obj 783 126 nbx 5 15 -1e+037 1e+037 0 0 empty \$0-lfoamount empty
-0 -8 0 10 -99865 -228856 -228856 1.07087 256;
+#X obj 406 224 hsl 128 15 0.04 4 1 0 \$0-lfoamount-s \$0-lfoamount-r
+empty -2 -8 0 10 -95835 -228593 -1 0 1;
+#X obj 541 224 nbx 5 15 -1e+037 1e+037 0 0 empty \$0-lfoamount empty
+0 -8 0 10 -95835 -228593 -228856 0 256;
 #X obj 1504 629 t f f;
 #X msg 1504 728 set \$1;
 #X obj 1504 603 param.get 6;
@@ -241,10 +241,10 @@ empty -2 -8 0 10 -99865 -228856 -1 3400 1;
 #X obj 1124 845 r \$0-lfospeed-s;
 #X obj 1124 894 s \$0-lfospeed;
 #X obj 1078 943 s \$0-lfospeed-r;
-#X obj 650 150 hsl 128 15 0.001 50 1 0 \$0-lfospeed-s \$0-lfospeed-r
-empty -2 -8 0 10 -99865 -228856 -1 7400 1;
-#X obj 784 150 nbx 5 15 -1e+037 1e+037 0 0 empty \$0-lfospeed empty
-0 -8 0 10 -99865 -228856 -228856 0.546994 256;
+#X obj 406 262 hsl 128 15 0.001 50 1 0 \$0-lfospeed-s \$0-lfospeed-r
+empty -2 -8 0 10 -95835 -228593 -1 0 1;
+#X obj 541 262 nbx 5 15 -1e+037 1e+037 0 0 empty \$0-lfospeed empty
+0 -8 0 10 -95835 -228593 -228856 0 256;
 #X obj 330 461 r \$0-lfospeed;
 #X obj 1078 795 param.get 7;
 #X obj 1134 868 param.set 7;
@@ -254,7 +254,7 @@ empty -2 -8 0 10 -99865 -228856 -1 7400 1;
 #X obj 569 419 s~ \$0-dryL;
 #X obj 645 1132 r~ \$0-dryL;
 #X obj 920 1131 r~ \$0-dryR;
-#X obj 225 529 r~ \$0-dryL;
+#X obj 224 456 r~ \$0-dryL;
 #X obj 394 886 r~ \$0-dryR;
 #X obj 225 576 *;
 #X floatatom 225 598 5 0 0 0 - - -;
@@ -268,14 +268,17 @@ empty -2 -8 0 10 -99865 -228856 -1 7400 1;
 #X obj 1339 850 r \$0-envamount-s;
 #X obj 1339 899 s \$0-envamount;
 #X obj 1293 948 s \$0-envamount-r;
-#X obj 646 260 hsl 128 15 0 1 0 0 \$0-envamount-s \$0-envamount-r empty
--2 -8 0 10 -112933 -228856 -1 12700 1;
-#X obj 780 260 nbx 5 15 -1e+037 1e+037 0 0 empty \$0-envamount empty
-0 -8 0 10 -99865 -228856 -228856 1 256;
+#X obj 406 300 hsl 128 15 0 1 0 0 \$0-envamount-s \$0-envamount-r empty
+-2 -8 0 10 -95835 -228593 -1 0 1;
+#X obj 541 300 nbx 5 15 -1e+037 1e+037 0 0 empty \$0-envamount empty
+0 -8 0 10 -95835 -228593 -228856 0 256;
 #X obj 225 551 env~ 8192;
 #X obj 225 648 line;
 #X floatatom 225 671 5 0 0 0 - - -;
 #X msg 226 623 \$1 100;
+#X obj 243 501 r~ \$0-dryR;
+#X obj 224 479 *~ 0.5;
+#X obj 243 524 *~ 0.5;
 #X connect 0 0 3 0;
 #X connect 0 0 36 0;
 #X connect 1 0 0 1;
@@ -481,7 +484,7 @@ empty -2 -8 0 10 -99865 -228856 -1 7400 1;
 #X connect 206 0 184 1;
 #X connect 209 0 98 0;
 #X connect 210 0 85 0;
-#X connect 211 0 227 0;
+#X connect 211 0 232 0;
 #X connect 213 0 214 0;
 #X connect 214 0 230 0;
 #X connect 215 0 217 0;
@@ -499,4 +502,7 @@ empty -2 -8 0 10 -99865 -228856 -1 7400 1;
 #X connect 228 0 229 0;
 #X connect 229 0 215 0;
 #X connect 230 0 228 0;
+#X connect 231 0 233 0;
+#X connect 232 0 227 0;
+#X connect 233 0 227 0;
 #X coords 0 -1 1 1 800 240 1 100 100;
