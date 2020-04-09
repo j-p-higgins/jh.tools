@@ -1,8 +1,8 @@
 #N canvas 193 28 2278 970 12;
 #X obj 636 550 verbguts;
-#X obj 440 204 hsl 128 15 3 31 0 0 \$0-blocksizeslider-s \$0-blocksizeslider-r
+#X obj 409 198 hsl 128 15 3 31 0 0 \$0-blocksizeslider-s \$0-blocksizeslider-r
 empty -2 -8 0 10 -33289 -162280 -1 0 1;
-#X obj 437 243 hradio 15 1 0 5 \$0-overlapradio-s \$0-overlapradio-r
+#X obj 406 237 hradio 15 1 0 5 \$0-overlapradio-s \$0-overlapradio-r
 empty 0 -8 0 10 -33289 -162280 -258112 4;
 #X obj 263 449 sel 1 2 3 4;
 #X msg 337 576 1;
@@ -13,7 +13,7 @@ empty 0 -8 0 10 -33289 -162280 -258112 4;
 #X floatatom 263 602 5 0 0 0 - - -;
 #X obj 99 439 i;
 #X floatatom 99 463 5 0 0 0 - - -;
-#X obj 437 281 hradio 15 1 0 5 \$0-downsampleradio-s \$0-downsampleradio-r
+#X obj 406 275 hradio 15 1 0 5 \$0-downsampleradio-s \$0-downsampleradio-r
 empty 0 -8 0 10 -33289 -162280 -1 0;
 #X obj 416 451 sel 1 2 3 4;
 #X msg 490 578 1;
@@ -24,9 +24,9 @@ empty 0 -8 0 10 -33289 -162280 -1 0;
 #X msg 471 554 0.2;
 #X obj 99 694 pack f f f;
 #X obj 99 668 t b;
-#X obj 669 165 hsl 128 15 100 700 0 0 \$0-densityslider-s \$0-densityslider-r
+#X obj 167 159 hsl 128 15 100 700 0 0 \$0-densityslider-s \$0-densityslider-r
 empty -2 -8 0 10 -33289 -162280 -1 0 1;
-#X obj 669 204 hsl 128 15 0 1 0 0 \$0-decayslider-s \$0-decayslider-r
+#X obj 167 198 hsl 128 15 0 1 0 0 \$0-decayslider-s \$0-decayslider-r
 empty -2 -8 0 10 -33289 -162280 -1 0 1;
 #X obj 689 525 r \$0-decay;
 #X obj 671 500 r \$0-density;
@@ -37,9 +37,9 @@ empty -2 -8 0 10 -33289 -162280 -1 0 1;
 #X obj 99 413 r \$0-blocksize;
 #X obj 636 875 dac~ 1;
 #X obj 911 881 dac~ 2;
-#X obj 669 281 hsl 128 15 -1 1 0 0 \$0-wetdryslider-s \$0-wetdryslider-r
+#X obj 167 275 hsl 128 15 -1 1 0 0 \$0-wetdryslider-s \$0-wetdryslider-r
 empty -2 -8 0 10 -33289 -162280 -1 0 1;
-#X obj 803 281 nbx 5 15 -1e+037 1e+037 0 0 empty \$0-wetdry empty 0
+#X obj 301 275 nbx 4 15 -1e+037 1e+037 0 0 empty \$0-wetdry empty 0
 -8 0 10 -16645 -258112 -228856 0 256;
 #X obj 926 684 r \$0-wetdry;
 #X obj 926 707 + 1;
@@ -84,15 +84,15 @@ empty -2 -8 0 10 -33289 -162280 -1 0 1;
 #X floatatom 152 527 5 0 0 0 - - -;
 #X obj 152 552 t b;
 #X msg 152 578 64;
-#X obj 516 281 nbx 5 15 -1e+037 1e+037 0 0 empty \$0-actualdownsample
+#X obj 485 275 nbx 5 15 -1e+037 1e+037 0 0 empty \$0-actualdownsample
 empty 0 -8 0 10 -16645 -258112 -1 0 256;
-#X obj 516 243 nbx 5 15 -1e+037 1e+037 0 0 empty \$0-actualoverlap
+#X obj 485 237 nbx 5 15 -1e+037 1e+037 0 0 empty \$0-actualoverlap
 empty 0 -8 0 10 -16645 -258112 -1 0 256;
-#X obj 575 204 nbx 5 15 -1e+037 1e+037 0 0 empty \$0-actualblocksize
+#X obj 544 198 nbx 5 15 -1e+037 1e+037 0 0 empty \$0-actualblocksize
 empty 0 -8 0 10 -16645 -258112 -1 0 256;
-#X obj 804 204 nbx 5 15 -1e+037 1e+037 0 0 empty \$0-decay empty 0
+#X obj 302 198 nbx 4 15 -1e+037 1e+037 0 0 empty \$0-decay empty 0
 -8 0 10 -16645 -258112 -1 0 256;
-#X obj 803 165 nbx 5 15 -1e+037 1e+037 0 0 empty \$0-density empty
+#X obj 301 159 nbx 4 15 -1e+037 1e+037 0 0 empty \$0-density empty
 0 -8 0 10 -16645 -258112 -1 0 256;
 #X floatatom 99 601 5 0 0 0 - - -;
 #X obj 99 626 s \$0-actualblocksize;
@@ -102,9 +102,9 @@ empty 0 -8 0 10 -16645 -258112 -1 0 256;
 #X obj 703 633 r \$0-cutoff;
 #X obj 912 657 lop~ 20000;
 #X obj 979 633 r \$0-cutoff;
-#X obj 669 243 hsl 128 15 15 20000 1 0 \$0-cutoffslider-s \$0-cutoffslider-r
+#X obj 167 237 hsl 128 15 15 20000 1 0 \$0-cutoffslider-s \$0-cutoffslider-r
 empty -2 -8 0 10 -33289 -162280 -1 0 1;
-#X obj 803 243 nbx 5 15 -1e+037 1e+037 0 0 empty \$0-cutoff empty 0
+#X obj 301 237 nbx 4 15 -1e+037 1e+037 0 0 empty \$0-cutoff empty 0
 -8 0 10 -16645 -258112 -228856 0 256;
 #X obj 1263 178 r gui;
 #X obj 1263 200 route mouse;
