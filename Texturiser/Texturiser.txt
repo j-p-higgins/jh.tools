@@ -1,0 +1,7 @@
+iolayout 2 2;
+code Text;
+type effect;
+description Dual mono looper/freeze effect with tremolo. No zero crossing point detection so often clicks and pops. Switch on random for instant Alva Noto.;
+compatibility 1.0.5;
+image Texturiser.png;
+playhead true;
