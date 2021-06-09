@@ -21,4 +21,7 @@ Dual mono looper/freeze effect with tremolo. No zero crossing point detection so
 ![BankPass screenshot 1](https://raw.githubusercontent.com/j-p-higgins/jh.tools/master/bankpass_screenshot_1.png)<br>
 ![BankPass screenshot 2](https://raw.githubusercontent.com/j-p-higgins/jh.tools/master/bankpass_screenshot_2.png)<br>
 **BankPass**<br>
-Small bank of four resonant bandpass filters. There is a feedback loop built in which can add extra sustain to the resonance on the filters, or if pushed will go into screaming self oscillation. Plugin can optionally be controlled via MIDI in either four voice polyphonic mode or in unison. When controlled with MIDI frequency sliders work as an offset and can be used similar to an additive synthesiser in mono (unison) mode. Settings for MIDI along with some other features including toggleable pre-programmed scales can be found in the advanced features tab. 
+Small bank of four resonant bandpass filters. There is a feedback loop built in which can add extra sustain to the resonance on the filters, or if pushed will go into screaming self oscillation. Plugin can optionally be controlled via MIDI in either four voice polyphonic mode or in unison. When controlled with MIDI frequency sliders work as an offset and can be used similar to an additive synthesiser in mono (unison) mode. Settings for MIDI along with some other features including toggleable pre-programmed scales can be found in the advanced features tab. <br><br>
+
+
+To install on Windows, copy folder for the plugin you want to your VST folder. For Mac and Linux you will need to recompile, see Camomile wiki for details https://github.com/pierreguillot/Camomile/wiki
