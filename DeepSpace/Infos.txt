@@ -1,0 +1,3 @@
+DeepSpace is a reverb based on the algorithm used in the Ursa Major Space Station. This implementation allows you to push the feedback of the reverb much further than originally intended to get longer reverb times with added resonant warbling pitches. Using the feedback supression compressor built in it is possible to create sustained undulating feedback drones without distortion.
+
+Jonathan Higgins
