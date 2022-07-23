@@ -2,6 +2,10 @@
 Esoteric VST plugins made in Puredata compiled with Camomile (https://github.com/pierreguillot/Camomile).<br><br>
 
 <br><br>
+![DeepSpace screenshot](https://raw.githubusercontent.com/j-p-higgins/jh.tools/master/deepspace_screenshot.png)<br>
+**DeepSpace**<br>
+A reverb based on the algorithm used in the Ursa Major Space Station. This implementation allows you to push the feedback of the reverb much further than originally intended to get longer decay times with lots added resonant warbling artifacts. By dialing in the feedback supression compressor built in it is possible to create sustained undulating feedback drones without clipping.
+<br><br>
 ![Mangle screenshot](https://raw.githubusercontent.com/j-p-higgins/jh.tools/master/mangle_screenshot.png)<br>
 **Mangle**<br>
 A trio of distortions varying from gentle thickening to full sonic destruction. A multiband overdrive style distortion, a hard clipping distortion with control of the symmetry of the clipping and a '1-bit ADC' for turning all sounds into square waves.
